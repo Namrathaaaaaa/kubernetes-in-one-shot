@@ -1,4 +1,4 @@
-name: Service 
+kind: Service 
 apiVersion: v1
 metadata: 
   name: mysql-service
