@@ -24,7 +24,8 @@ spec:
           value: root
         - name: MYSQL_DATABASE
           valueFrom:
-            name:  mysql-config-map
+            ConfigMapKeyref:
+              name:  mysql-config-map
         volumeMounts:
         - name: mysql-data
           mountPath: /var/lib/mysql
