@@ -23,7 +23,8 @@ spec:
         - name: MYSQL_ROOT_PASSWORD
           value: root
         - name: MYSQL_DATABASE
-          value: devops
+          valueFrom:
+            name:  mysql-config-map
         volumeMounts:
         - name: mysql-data
           mountPath: /var/lib/mysql
